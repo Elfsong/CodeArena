@@ -75,8 +75,8 @@ def submit_solution(solution: Solution, response: Response):
         content_hash = utils.get_hash(f"{solution.q_id}_{solution.language}_{solution.u_id}_{solution.content}")
 
         #TODO: sandbox
-        time_usage = 512
-        memory_usage = 1024
+        time_usage = None
+        memory_usage = None
 
         solution_dict = {
             "q_id": solution.q_id,
