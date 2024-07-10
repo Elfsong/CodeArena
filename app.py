@@ -2,7 +2,7 @@
 
 # Author: Du Mingzhe (mingzhe@nus.edu.sg)
 
-import utilities
+import utils
 from pydantic import BaseModel
 from pymongo import MongoClient
 from bson.json_util import dumps
@@ -30,8 +30,8 @@ class Question(BaseModel):
 
 
 app = FastAPI(title="CodeArena", description="Arena for Code LLMs (of course human can use it too)")
-db_username, db_password = utilities.get_auth()
-db_name, db_port = utilities.get_db_info()
+db_username, db_password = utils.get_auth()
+db_name, db_port = utils.get_db_info()
 db_client = MongoClient(f"mongodb://{db_username}:{db_password}@localhost:{db_port}/?authSource={db_name}")
 
 db = db_client["code_arena"]
@@ -72,7 +72,7 @@ async def get_solution(s_id: str, response: Response):
 @app.post("/submit_solution")
 def submit_solution(solution: Solution, response: Response):
     try:
-        content_hash = utilities.get_hash(f"{solution.q_id}_{solution.language}_{solution.u_id}_{solution.content}")
+        content_hash = utils.get_hash(f"{solution.q_id}_{solution.language}_{solution.u_id}_{solution.content}")
 
         #TODO: sandbox
         time_usage = 512
@@ -108,9 +108,9 @@ def submit_solution(solution: Solution, response: Response):
 @app.post("/submit_testcase")
 def submit_testcase(testcase: TestCase, response: Response):
     try:
-        instance_input = utilities.get_json(testcase.input)
-        instance_output = utilities.get_json(testcase.output)
-        content_hash = utilities.get_hash(f"{testcase.q_id}_{testcase.input}")
+        instance_input = utils.get_json(testcase.input)
+        instance_output = utils.get_json(testcase.output)
+        content_hash = utils.get_hash(f"{testcase.q_id}_{testcase.input}")
 
         testcase_dict = {
             "q_id": testcase.q_id,
