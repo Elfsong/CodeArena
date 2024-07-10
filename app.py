@@ -31,7 +31,8 @@ class Question(BaseModel):
 
 app = FastAPI(title="CodeArena", description="Arena for Code LLMs (of course human can use it too)")
 db_username, db_password = utilities.get_auth()
-db_client = MongoClient(f"mongodb://{db_username}:{db_password}@localhost:27017/?authSource=code_arena")
+db_name, db_port = utilities.get_db_info()
+db_client = MongoClient(f"mongodb://{db_username}:{db_password}@localhost:{db_port}/?authSource={db_name}")
 
 db = db_client["code_arena"]
 question_collection = db["questions"]
@@ -39,7 +40,7 @@ solution_collection = db["solutions"]
 testcase_collection = db["testcases"]
 
 @app.get("/question/{q_id}")
-async def get_question(q_id: int, response: Response):
+async def get_question(q_id: str, response: Response):
     try:
         hint = question_collection.count_documents({"q_id": q_id})
         if hint:
@@ -54,7 +55,7 @@ async def get_question(q_id: int, response: Response):
         return {"status": "fail", "content": f"Question [{q_id}] Error: {e}"}
 
 @app.get("/solution/{s_id}")
-async def get_solution(s_id: int, response: Response):
+async def get_solution(s_id: str, response: Response):
     try:
         hint = solution_collection.count_documents({"s_id": s_id})
         if hint:

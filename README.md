@@ -14,6 +14,8 @@ Best regards,
 
 Mingzhe
 
+PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)
+
 
 
 
