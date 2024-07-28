@@ -16,6 +16,16 @@ Mingzhe
 
 PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)
 
+# Citation
+```
+@article{du2024mercury,
+  title={Mercury: An efficiency benchmark for llm code synthesis},
+  author={Du, Mingzhe and Luu, Anh Tuan and Ji, Bin and Ng, See-Kiong},
+  journal={arXiv preprint arXiv:2402.07844},
+  year={2024}
+}
+```
+
 
 
 
