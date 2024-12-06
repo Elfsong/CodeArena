@@ -14,9 +14,9 @@ To facilitate exploration, we provide a trial account (Account: **Test** / Passw
 
 Best regards,
 
-Mingzhe([mingzhe@nus.edu.sg](mailto:mingzhe@nus.edu.sg))
+Mingzhe ([mingzhe@nus.edu.sg](mailto:mingzhe@nus.edu.sg))
 
-PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)
+*PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)*
 
 # Citation
 ```
