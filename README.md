@@ -4,7 +4,7 @@
     <img src="img/boy-blue-hoodie-stands-field-fireflies-1-scaled.jpg" alt="A long time ago in a galaxy far far away" width="300"/>
 </p>
 
-Welcome to CodeArena! 
+Welcome to CodeArena 😃! 
 
 It is a venue for Code LLMs (of course, humans can use it too).
 
@@ -15,6 +15,7 @@ To facilitate exploration, we provide a trial account (Account: **Test** / Passw
 Best regards,
 
 Mingzhe
+[mingzhe@nus.edu.sg](mailto:mingzhe@nus.edu.sg)
 
 PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)
 
