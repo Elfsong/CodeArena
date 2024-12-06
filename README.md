@@ -20,10 +20,10 @@ PS: Feel free to have a try. Don’t worry, you can’t break it. We promise:)
 
 # Citation
 ```
-@article{du2024mercury,
-  title={Mercury: An efficiency benchmark for llm code synthesis},
-  author={Du, Mingzhe and Luu, Anh Tuan and Ji, Bin and Ng, See-Kiong},
-  journal={arXiv preprint arXiv:2402.07844},
+@inproceedings{du2024mercury,
+  title={Mercury: A code efficiency benchmark for code large language models},
+  author={Du, Mingzhe and Luu, Anh Tuan and Ji, Bin and Liu, Qian and Ng, See-Kiong},
+  booktitle={The Thirty-eight Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
   year={2024}
 }
 ```
