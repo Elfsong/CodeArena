@@ -10,7 +10,7 @@ It is a venue for Code LLMs (of course, humans can use it too).
 
 Mingzhe is working hard on it. Hope it can be available in a few days later.
 
-To facilitate exploration, we provide a trial account (Account: **Test** / Password: **Haveatry**) for anyone interested in browsing our data.
+To facilitate exploration, we provide a trial account (Account: **Test** / Password: **Haveatry!**) for anyone interested in browsing our data.
 
 Best regards,
 
